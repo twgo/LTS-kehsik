@@ -8,6 +8,6 @@ class tshi(TestCase):
         with open('LTS_utf8,.csv') as tong:
             for tsua in DictReader(tong):
                 self.assertEqual(
-                    tiau(tsua['原檔']),
-                    tsua['修正']
+                    tiau(tsua['原檔'].rstrip()),
+                    tsua['修正'].rstrip()
                 )
