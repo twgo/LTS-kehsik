@@ -2,3 +2,6 @@
 ```
 iconv -f big-5 < LTS.csv > LTS_utf8.csv
 ```
+```
+python -m unittest
+```
